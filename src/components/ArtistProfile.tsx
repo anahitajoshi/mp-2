@@ -2,27 +2,27 @@ import styled from "styled-components";
 import { Artist } from "../interfaces/Artist.ts";
 
 const AllArtistDiv = styled.div`
-    display:flex;
-    flex-flow: row wrap;
+    display: flex;
+    flex-wrap: wrap;
     background-color: #1E1E2F;
-    justify-content: space-evenly;
+    justify-content: space-around;
+    padding: 3%;
 `;
-
 
 const SingleArtistDiv = styled.div`
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    align-items: center;
     text-align: center;
     font: normal small-caps bold calc(2px + 1vw) 'Arial', sans-serif;
-    margin: 2%;
-    max-width: 25%;
-    padding: 5%;
-    background-color:rgb(126, 201, 242);
-    color: #F0EDEE; 
-    border: 3px solid #5A5F78; 
-    border-radius: 8px;
-`;
+    margin: 1.5%;
+    max-width: 22%;
+    padding: 4%;
+    background-color: rgb(126, 201, 242);
+    color: #F0EDEE;
+    border: 3px solid #5A5F78;
+    border-radius: 12px;
+`
 
 
 export default function ArtistProfile(props: { data: Artist[] }) {
